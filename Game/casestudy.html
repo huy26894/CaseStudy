@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Snake Game</title>
+        <style>
+            canvas
+            {
+                position: absolute;
+                top: 60px;
+                left: 450px;
+                border: 2px solid black;
+                background: #c0f0aa;
+                display: block;
+            }
+            body 
+            {
+                background: url(image/anhnen.jpg);
+            }
+            #play
+            {
+                position: absolute;
+                border: 2px solid #000000;
+                top: 60px;
+                left: 450px;
+                width: 600px;
+                height: 600px;
+            }
+            #GameOver 
+            {
+                position: absolute;
+                border: 2px solid #000000;
+                top: 60px;
+                left: 450px;
+                width: 600px;
+                height: 600px;
+                display: none;
+            }
+            #Replay 
+            {
+                position: absolute;
+                top: 420px;
+                left: 680px;
+                width: 160px;
+                height: 160px;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <audio controls>
+            <source src="audio/play.mp3" type="audio/mp3">
+        </audio> -->
+    <canvas id="snake" width="600" height="600"></canvas>
+    <div><img src="image/play.jpg" id="play" onclick="disPlay()"></div>
+    <div><img src="image/gameover.jpg" id="GameOver"></div>
+    <div><img src="image/replay.jpg" id="Replay" onclick="StarGame()"></div>
+    <script src="game.js"></script>
+    </body>
+</html>
